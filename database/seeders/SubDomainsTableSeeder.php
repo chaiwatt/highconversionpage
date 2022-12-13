@@ -17,13 +17,16 @@ class SubDomainsTableSeeder extends Seeder
     {
         DB::table('sub_domains')->insert([
             [
-                'name' => 'userone',
+                'name' => 'ijsoworksheet',
             ],
             [
-                'name' => 'usertwo',
+                'name' => 'laolotto',
             ],
             [
-                'name' => 'userthree',
+                'name' => 'vnlotto',
+            ],
+            [
+                'name' => 'forexsignal',
             ]
            
         ]);
