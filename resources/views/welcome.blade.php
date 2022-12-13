@@ -22,5 +22,10 @@
     </head>
     <body class="antialiased">
         <h2>This is Main Domain </h2>
+        <u>
+            @foreach ($subdomains as $subdomain)
+             <li>{{$subdomain->name}}</li>
+            @endforeach
+        </u>
     </body>
 </html>
