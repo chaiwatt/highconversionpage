@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function ($subdomain) {
+    dd('HERE');
     return view('subdomain',[
         'subdomain' => $subdomain
     ]);
