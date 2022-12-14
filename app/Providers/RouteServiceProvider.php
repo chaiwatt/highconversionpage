@@ -33,8 +33,8 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
-            // Route::domain('{usertwo}.highconversionpage.local')
-            //     ->group(base_path('routes/subdomain_web.php'));       
+            Route::domain('{subdomain}.highconversionpage.local')
+                ->group(base_path('routes/subdomain_web.php'));       
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
