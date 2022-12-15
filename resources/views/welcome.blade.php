@@ -21,7 +21,8 @@
         </style>
     </head>
     <body class="antialiased">
-        <h2>This is Main Domain </h2>
+        <h2>This is the Main Domain </h2>
+        <h3>Below are subdomain list</h3>
         <u>
             @foreach ($subdomains as $subdomain)
              <li>{{$subdomain->name}}</li>
