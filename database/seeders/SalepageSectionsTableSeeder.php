@@ -68,7 +68,7 @@ class SalepageSectionsTableSeeder extends Seeder
                 'user_id' => 1,
                 'section' => 'salepage.partials.testimonial',
                 'order' => 9,
-                'status' => 1
+                'status' => 0
             ],
             [
                 'user_id' => 1,
