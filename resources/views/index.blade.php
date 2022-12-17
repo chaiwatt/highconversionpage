@@ -5,7 +5,7 @@
         <hr class="space-lg in-visible-sm" />
         
         <h1 data-anima="fade-in" data-time="1000">
-            คุณกำลังมองหา Salepage<br class="hidden-md" /> สำหรับใช้ยิงแอดเพื่อ <span> เพิ่มโอกาสขาย </span>  อยู่ใช่ไหม ?.
+            คุณกำลังมองหา Salepage<br class="hidden-md" /> สำหรับใช้ยิงแอดเพื่อ <span> เพิ่มโอกาสขาย </span>  อยู่ใช่ไหม?.
         </h1>
         <p class="width-900" data-anima="fade-in" data-time="1000">
             คุณไม่จำเป็นต้องเขียนเว็บไซต์เป็น สร้าง Sellpage ง่าย ๆ แค่ลากวางแล้วใส่คอนเทนต์ เรามี Salepage หลากหลายเหมาะสำหรับสินค้าหลายกลุ่มทั้งสินค้า Shipping, สินค้า Digital มีระบบเชื่อมต่อกับ Payment gateway ลูกค้าชำระเงินผ่าน QR payment, บัตรเครดิต/เดบิต, True Money Wallet เราทราบทันที ง่ายกว่านี้ไม่มีแล้ว
