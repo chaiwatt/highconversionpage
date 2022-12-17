@@ -33,6 +33,10 @@
 {
     font-size: 16px;
 }
+.bonus-box img
+{
+    width: 180px;
+}
 
 .textbar p
 {
@@ -63,6 +67,10 @@
 }
 @media(max-width: 480px)
 {
+    .bonus-box img
+    {
+        width: 80%;
+    }
     .introduce p
     {
         font-size: 0.7em;

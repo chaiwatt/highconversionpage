@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="bonus-box blue-border">
-                    <img src="{{asset('assets/salepage/images/ijso_physic_small.png')}}" style="width:180px" class="alignleft" alt=""/>
+                    <img src="{{asset('assets/salepage/images/ijso_physic_small.png')}}" class="alignleft" alt=""/>
                     <h3>ฟิสิกส์ :</h3>
                     <h4>เนื้อหาออกสอบ</h4>
                     <p>
@@ -21,7 +21,7 @@
             </div>
             <div class="col-md-6">
                 <div class="bonus-box red-border">
-                    <img src="{{asset('assets/salepage/images/ijso_chem_small.png')}}" style="width:180px" class="alignleft" alt=""/>
+                    <img src="{{asset('assets/salepage/images/ijso_chem_small.png')}}" class="alignleft" alt=""/>
                     <h3>เคมี :</h3>
                     <h4>เนื้อหาออกสอบ</h4>
                     <p>
@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-6">
                 <div class="bonus-box yellow-border">
-                    <img src="{{asset('assets/salepage/images/ijso_bio_small.png')}}" style="width:180px" class="alignleft" alt=""/>
+                    <img src="{{asset('assets/salepage/images/ijso_bio_small.png')}}" class="alignleft" alt=""/>
                     <h3>ชีววิทยา :</h3>
                     <h4>เนื้อหาออกสอบ</h4>
                     <p>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-6">
                 <div class="bonus-box green-border">
-                    <img src="{{asset('assets/salepage/images/summary_small.png')}}" style="width:180px" class="alignleft" alt=""/>
+                    <img src="{{asset('assets/salepage/images/summary_small.png')}}" class="alignleft" alt=""/>
                     <h3>เนื้อหารอบ 2 -3</h3>
                     <p>
                         ชีววิทยา (disease & immunology, survival in the environment, plant physiology, homeostasis, nervous system, cell division, plant structure & function, human activities, ecosystem) เคมี (Atoms & Molecules, acid_base, Chemical bonding,State of matters, Type of reactions Chemical equations & Stoichiometry, Electrochemistry) ฟิสิกส์ (Mechanics, Work, Energy &Power,Fluids,Thermal, ไฟฟ้า)
