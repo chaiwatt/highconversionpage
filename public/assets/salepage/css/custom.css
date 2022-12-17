@@ -6,6 +6,23 @@
     margin-top: 30px;
 }
 
+.bonus-section .btn
+{
+    font-size: 28px;
+    padding:20px;
+    margin-top:30px
+}
+
+.bonus-section .section-heading p
+{
+    font-size: 28px
+}
+
+.bonus-heading p
+{
+    font-size: 20px
+}
+
 @media(max-width: 480px)
 {
     .introduce p
@@ -41,5 +58,41 @@
     {
         margin-bottom: 50px;
     }
+    .bonus-section ul li
+    {
+        font-size: 20px;
+    }
+    .bonus-section h3
+    {
+        font-size: 26px;
+    }
+    .bonus-section .btn
+    {
+        font-size: 26px;
+        text-align: center;
+    }
 
+    .bonus-section img
+    {
+        margin-bottom: 50px;
+    }
+
+    .bonus-section .section-heading p
+    {
+        font-size: 24px;
+        line-height: 42px;
+    }
+    .textbar p
+    {
+        line-height: 40px;
+    }
+    .bonus-box p
+    {
+        line-height: 40px;
+    }
+
+    .bonus-heading p
+    {
+        line-height: 40px;
+    }
 }

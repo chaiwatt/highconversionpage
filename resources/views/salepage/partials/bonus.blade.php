@@ -1,10 +1,10 @@
-<div id="{{$salepagesection->salepagename}}" class="contain-wrapp dark-container padding-bot50">	
+<div id="{{$salepagesection->salepagename}}" class="contain-wrapp dark-container padding-bot50 bonus-section">	
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
                     <h3>ใหม่ล่าสุด...!</h3>
-                    <p style="font-size: 28px">แนวเฉลยข้อสอบ IJSO รอบแรก ปี 59 - 63 วิชาฟิสิกส์ เคมีและชีววิทยา แยกรายหัวข้อออกสอบ</p>
+                    <p >แนวเฉลยข้อสอบ IJSO รอบแรก ปี 59 - 63 วิชาฟิสิกส์ เคมีและชีววิทยา แยกรายหัวข้อออกสอบ</p>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
                     <li><i class="fa fa-check green"></i> โบนัส ฟรี!! สรุปเนื้อหารอบ 2-3</li>
                     {{-- <li><i class="fa fa-check green"></i> Free Update and Support</li> --}}
                 </ul>
-                <p><a href="#" class="btn btn-primary" style="font-size: 28px;padding:20px;margin-top:30px">สั่งซื้อ</a></p>
+                <p><a href="#" class="btn btn-primary" >สั่งซื้อ</a></p>
             </div>
         </div>
     </div>
