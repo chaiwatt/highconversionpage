@@ -1,3 +1,11 @@
+.btn-parallax-purchase
+{
+    padding:30px;
+    font-size:1.8em;
+    width:200px;
+    margin-top: 30px;
+}
+
 @media(max-width: 480px)
 {
     .introduce p
@@ -18,6 +26,20 @@
         position: relative;
         float:none;
         margin: 0;
+    }
+    .list-styled .parallax
+    {
+        font-size: 20px;
+    }
+    .btn-parallax-purchase
+    {
+        font-size: 1.5em;
+        padding:20px;
+        margin-top: 40px;
+    }
+    .parallax-img
+    {
+        margin-bottom: 50px;
     }
 
 }
