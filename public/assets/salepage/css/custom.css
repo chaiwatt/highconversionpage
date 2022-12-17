@@ -44,6 +44,16 @@
     font-size: 24px;
 }
 
+.list .section-heading p
+{
+    font-size: 24px;
+}
+
+.list .item p
+{
+    font-size: 18px;
+}
+
 @media(max-width: 480px)
 {
     .introduce p
@@ -126,6 +136,10 @@
     .gellery .section-heading p
     {
         font-size: 20px;
+        line-height: 40px;
+    }
+    .list .section-heading p
+    {
         line-height: 40px;
     }
 }
