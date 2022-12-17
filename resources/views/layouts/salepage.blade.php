@@ -91,8 +91,8 @@
     <script src="{{asset('assets/salepage/js/countdown/setting.js')}}"></script>  
 	
     <!-- PrettyPhoto -->
-	{{-- <script src="{{asset('assets/salepage/js/prettyPhoto/jquery.prettyPhoto.js')}}"></script>  
-	<script src="{{asset('assets/salepage/js/prettyPhoto/setting.js')}}"></script> --}}
+	<script src="{{asset('assets/salepage/js/prettyPhoto/jquery.prettyPhoto.js')}}"></script>  
+	<script src="{{asset('assets/salepage/js/prettyPhoto/setting.js')}}"></script>
 	
 	<!-- JavaScript totop -->
 	<script src="{{asset('assets/salepage/js/totop/jquery.ui.totop.js')}}"></script>	
@@ -103,7 +103,7 @@
     {{-- <script src="{{asset('assets/js/custom_extend.js')}}"></script> --}}
 
 	<!-- Theme option-->
-	{{-- <script src="js/theme-option/demosetting.html"></script>	 --}}
+	<script src="{{asset('assets/salepage/js/setting.html')}}"></script>	
   </body>
 
 </html>
