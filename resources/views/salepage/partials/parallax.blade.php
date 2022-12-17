@@ -4,7 +4,7 @@
             <div class="row marginbot30">
                 <div class="col-md-12 introduce text-center">
                     <p>
-                        แนวเฉลยข้อสอบ <span class="yellow" > IJSO</span> รอบแรก
+                        แนวเฉลยข้อสอบ <span class="yellow"> IJSO</span> รอบแรก
                     </p>
                     <p>วิชาฟิสิกส์, เคมี ชีวิทยา ปี 2559-2563 </p>
                 </div>
