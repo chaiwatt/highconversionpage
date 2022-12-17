@@ -23,7 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{asset('/assets/salepage/css/style.css')}}" rel="stylesheet">
-    
+    <link href="{{asset('/assets/salepage/css/custom.css')}}" rel="stylesheet">
     <!-- Theme skins -->
     <link id="skin" href="{{asset('/assets/salepage/css/skins/default.css')}}" rel="stylesheet">
 

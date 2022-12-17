@@ -1,4 +1,4 @@
-<div id="{{$salepagesection->salepagename}}" class="contain-wrapp dark-container cta-wrapp">	
+<div id="{{$salepagesection->salepagename}}" class="contain-wrapp dark-container cta-wrapp textbar">	
     <div class="container">
         <div class="row">
             <div class="col-md-12">
