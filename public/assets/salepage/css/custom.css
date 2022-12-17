@@ -20,7 +20,12 @@
 
 .bonus-heading p
 {
-    font-size: 20px
+    font-size: 20px;
+}
+
+.purchase-section p
+{
+    font-size: 22px
 }
 
 @media(max-width: 480px)
@@ -82,11 +87,10 @@
         font-size: 24px;
         line-height: 42px;
     }
+
+    .bonus-box p,
     .textbar p
-    {
-        line-height: 40px;
-    }
-    .bonus-box p
+    .purchase-section p
     {
         line-height: 40px;
     }
