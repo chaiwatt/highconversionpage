@@ -15,9 +15,9 @@
                             <li>สิทธิประโยชน์ของการสอบ IJSO</li>
                             <li style="font-size: 18px"><i class="fa fa-check green"></i> ได้เพิ่มความรู้ ความสามารถด้านวิชาการขั้นสูง</li>
                             <li style="font-size: 18px"><i class="fa fa-check green"></i> เรียนรู้การทำ Lab จริง ทั้งฟิสิกส์ เคมีและชีววิทยา</li>
-                            <li style="font-size: 18px"><i class="fa fa-check green"></i> ได้เรียนกับอาจารย์ระดับมหาวิทยาลัยเก่ง ๆ ระดับประเทศ</li>
+                            <li style="font-size: 18px"><i class="fa fa-check green"></i> ได้เรียนกับอาจารย์มหาวิทยาลัยเก่ง ๆ ระดับประเทศ</li>
                             <li style="font-size: 18px"><i class="fa fa-check green"></i> ใช้เป็น Portfolio เข้า ม.4</li>
-                            <li style="font-size: 18px"><i class="fa fa-check green"></i> นักเรียนที่สอบติดอันดับ 1-15 สามารถเข้าค่าย 1 สอวนได้โดยไม่ต้องสอบ</li>
+                            <li style="font-size: 18px"><i class="fa fa-check green"></i> นักเรียนที่สอบติดอันดับ 1-15 สามารถเข้าค่าย 1 สอวน.ได้โดยไม่ต้องสอบ</li>
                         </ul>
                         {{-- <img src="{{asset('assets/salepage/images/guaranted.png')}}" class="alignleft" alt=""/>
                         <h5>เฉลยละเอียด IJSO วิชาฟิสิกส์ เคมี และชีววิทยาแยกรายหัวข้อ</h5>

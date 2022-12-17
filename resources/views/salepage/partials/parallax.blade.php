@@ -18,8 +18,8 @@
                         <li class="pull-right"><i class="fa fa-circle"></i> ข้อสอบฟิสิกส์พร้อมเฉลยละเอียด </li>
                         <li class="pull-left"><i class="fa fa-circle"></i> ข้อสอบเคมีพร้อมเฉลยละเอียด </li>
                         <li class="pull-right"><i class="fa fa-circle"></i> ข้อสอบชีววิทยาพร้อมเฉลยละเอียด </li>
-                        <li class="pull-left"><i class="fa fa-circle"></i> โบนัส!! ฟรีเฉลยรอบ 2 (บางปี)</li>
-                        <li class="pull-right"><i class="fa fa-circle"></i> โบนัส!! ฟรีเนื้อหาสรุปรอบ 2-3</li>
+                        <li class="pull-left"><i class="fa fa-circle"></i> โบนัส ฟรี!! เฉลยรอบ 2 (บางปี)</li>
+                        <li class="pull-right"><i class="fa fa-circle"></i> โบนัส ฟรี!! สรุปเนื้อหารอบ 2-3</li>
                     </ul>
                 </div>
                 

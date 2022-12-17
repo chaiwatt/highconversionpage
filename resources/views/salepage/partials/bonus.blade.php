@@ -18,8 +18,8 @@
                     <li><i class="fa fa-check green"></i> เฉลยข้อสอบปี 2559-2563 แบบละเอียด</li>
                     <li><i class="fa fa-check green"></i> เฉลยแยกหัวข้อ เรียงตามลำดับความยาก</li>
                     <li><i class="fa fa-check green"></i> เฉลยเป็นไฟล์ PDF ดาวน์โหลดได้ทันที</li>
-                    <li><i class="fa fa-check green"></i> ฟรี !! ข้อสอบรอบ 2-3 (บางวิชา)</li>
-                    <li><i class="fa fa-check green"></i> ฟรี !! ข้อสอบรอบแรกปี 2564 (บางวิชา)</li>
+                    <li><i class="fa fa-check green"></i> โบนัส ฟรี!! เฉลยรอบ 2 (บางปี)</li>
+                    <li><i class="fa fa-check green"></i> โบนัส ฟรี!! สรุปเนื้อหารอบ 2-3</li>
                     {{-- <li><i class="fa fa-check green"></i> Free Update and Support</li> --}}
                 </ul>
                 <p><a href="#" class="btn btn-primary" style="font-size: 28px;padding:20px;margin-top:30px">สั่งซื้อ</a></p>
