@@ -18,9 +18,11 @@
     font-size: 28px
 }
 
-.bonus-heading p
+
+.itemlist-heading p
 {
-    font-size: 20px;
+    font-size:0.5em;
+    line-height: 40px;
 }
 
 .purchase-section p
@@ -30,6 +32,12 @@
 .bonus-box
 {
     font-size: 16px;
+}
+
+.textbar p
+{
+    font-size: 16px;
+    line-height: 45px;
 }
 
 @media(max-width: 480px)
@@ -102,7 +110,7 @@
         line-height: 40px;
     }
 
-    .bonus-heading p
+    .itemlist-heading p
     {
         line-height: 40px;
         font-size: 18px;
