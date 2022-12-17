@@ -4,7 +4,7 @@
             <div class="row marginbot30">
                 <div class="col-md-12 introduce text-center">
                     <p>
-                        แนวเฉลยข้อสอบ <span class="yellow" style="font-size: 1.5em"> IJSO</span> รอบแรก
+                        แนวเฉลยข้อสอบ <span class="yellow" > IJSO</span> รอบแรก
                     </p>
                     <p>วิชาฟิสิกส์, เคมี ชีวิทยา ปี 2559-2563 </p>
                 </div>
@@ -15,11 +15,11 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list-styled list-lg">
-                        <li class="pull-right parallax"><i class="fa fa-circle"></i> ข้อสอบฟิสิกส์พร้อมเฉลยละเอียด </li>
-                        <li class="pull-left parallax"><i class="fa fa-circle"></i> ข้อสอบเคมีพร้อมเฉลยละเอียด </li>
-                        <li class="pull-right parallax"><i class="fa fa-circle"></i> ข้อสอบชีววิทยาพร้อมเฉลยละเอียด </li>
-                        <li class="pull-left parallax"><i class="fa fa-circle"></i> โบนัส ฟรี!! เฉลยรอบ 2 (บางปี)</li>
-                        <li class="pull-right parallax"><i class="fa fa-circle"></i> โบนัส ฟรี!! สรุปเนื้อหารอบ 2-3</li>
+                        <li class="pull-right parallax-item"><i class="fa fa-circle"></i> ข้อสอบฟิสิกส์พร้อมเฉลยละเอียด </li>
+                        <li class="pull-left parallax-item"><i class="fa fa-circle"></i> ข้อสอบเคมีพร้อมเฉลยละเอียด </li>
+                        <li class="pull-right parallax-item"><i class="fa fa-circle"></i> ข้อสอบชีววิทยาพร้อมเฉลยละเอียด </li>
+                        <li class="pull-left parallax-item"><i class="fa fa-circle"></i> โบนัส ฟรี!! เฉลยรอบ 2 (บางปี)</li>
+                        <li class="pull-right parallax-item"><i class="fa fa-circle"></i> โบนัส ฟรี!! สรุปเนื้อหารอบ 2-3</li>
                     </ul>
                 </div>
                 
