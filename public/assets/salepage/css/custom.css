@@ -90,7 +90,6 @@
 
     .bonus-box p,
     .textbar p
-    .purchase-section p
     {
         line-height: 40px;
     }
@@ -99,5 +98,9 @@
     {
         line-height: 40px;
         font-size: 18px;
+    }
+    .purchase-section p
+    {
+        line-height: 40px;
     }
 }
