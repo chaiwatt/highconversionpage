@@ -90,8 +90,8 @@
     </script>
     <script src="{{asset('assets/salepage/js/countdown/setting.js')}}"></script>  
 	
-    <!-- PrettyPhoto -->
-	<script src="{{asset('assets/salepage/js/prettyphoto/jquery.prettyPhoto.js')}}"></script>  
+    <!-- prettyphoto -->
+	<script src="{{asset('assets/salepage/js/prettyphoto/jquery.prettyphoto.js')}}"></script>  
 	<script src="{{asset('assets/salepage/js/prettyphoto/setting.js')}}"></script>
 	
 	<!-- JavaScript totop -->
