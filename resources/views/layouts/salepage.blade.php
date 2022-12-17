@@ -96,7 +96,7 @@
 	
 	<!-- JavaScript totop -->
 	<script src="{{asset('assets/salepage/js/totop/jquery.ui.totop.js')}}"></script>	
-	<script src="{{asset('assets/salepage/js/totop/setting.js')}}"></script>
+	<script src="{{asset('assets/salepage/js/totop/setting.js?v=1')}}"></script>
 
     <!-- Custom javaScript for this theme -->
     <script src="{{asset('assets/salepage/js/custom.js')}}"></script>
