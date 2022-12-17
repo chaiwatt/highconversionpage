@@ -15,11 +15,11 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list-styled list-lg">
-                        <li class="pull-right parallax-item"><i class="fa fa-circle"></i> ข้อสอบฟิสิกส์พร้อมเฉลยละเอียด </li>
-                        <li class="pull-left parallax-item"><i class="fa fa-circle"></i> ข้อสอบเคมีพร้อมเฉลยละเอียด </li>
-                        <li class="pull-right parallax-item"><i class="fa fa-circle"></i> ข้อสอบชีววิทยาพร้อมเฉลยละเอียด </li>
-                        <li class="pull-left parallax-item"><i class="fa fa-circle"></i> โบนัส ฟรี!! เฉลยรอบ 2 (บางปี)</li>
-                        <li class="pull-right parallax-item"><i class="fa fa-circle"></i> โบนัส ฟรี!! สรุปเนื้อหารอบ 2-3</li>
+                        <li class="pull-right parallax-item" ><i class="fa fa-circle"></i> ข้อสอบฟิสิกส์พร้อมเฉลยละเอียด </li>
+                        <li class="pull-left parallax-item" ><i class="fa fa-circle"></i> ข้อสอบเคมีพร้อมเฉลยละเอียด </li>
+                        <li class="pull-right parallax-item" ><i class="fa fa-circle"></i> ข้อสอบชีววิทยาพร้อมเฉลยละเอียด </li>
+                        <li class="pull-left parallax-item" ><i class="fa fa-circle"></i> โบนัส ฟรี!! เฉลยรอบ 2 (บางปี)</li>
+                        <li class="pull-right parallax-item" ><i class="fa fa-circle"></i> โบนัส ฟรี!! สรุปเนื้อหารอบ 2-3</li>
                     </ul>
                 </div>
                 
