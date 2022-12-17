@@ -44,7 +44,7 @@
                     <img src="{{asset('assets/salepage/images/summary_small.png')}}" style="width:180px" class="alignleft" alt=""/>
                     <h3>เนื้อหารอบ 2 -3</h3>
                     <p>
-                        ชีววิทยา (disease &immunology,survival in the environment,plant physiology,homeostasis, nervous system,cell division, plant structure and function,human activities and ecosystem) เคมี (Atoms and Molecules,acid_base,Chemical bonding,State of matters,Type of reactions Chemical equations and Stoichiometry,Electrochemistry) ฟิสิกส์ (MechanicsมWork, Energy &Power,Fluids,Thermal, ไฟฟ้า)
+                        ชีววิทยา (disease &immunology,survival in the environment,plant physiology,homeostasis, nervous system,cell division, plant structure and function,human activities and ecosystem) เคมี (Atoms and Molecules,acid_base,Chemical bonding,State of matters,Type of reactions Chemical equations and Stoichiometry,Electrochemistry) ฟิสิกส์ (Mechanics, Work, Energy &Power,Fluids,Thermal, ไฟฟ้า)
                     </p>
                 </div>
             </div>

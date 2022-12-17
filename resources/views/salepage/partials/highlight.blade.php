@@ -19,15 +19,15 @@
                             <li style="font-size: 18px"><i class="fa fa-check green"></i> ใช้เป็น Portfolio เข้า ม.4</li>
                             <li style="font-size: 18px"><i class="fa fa-check green"></i> นักเรียนที่สอบติดอันดับ 1-15 สามารถเข้าค่าย 1 สอวนได้โดยไม่ต้องสอบ</li>
                         </ul>
-                        <img src="{{asset('assets/salepage/images/guaranted.png')}}" class="alignleft" alt=""/>
+                        {{-- <img src="{{asset('assets/salepage/images/guaranted.png')}}" class="alignleft" alt=""/>
                         <h5>เฉลยละเอียด IJSO วิชาฟิสิกส์ เคมี และชีววิทยาแยกรายหัวข้อ</h5>
                         <p>
                         Autem eruditi volutpat ius eu, mei eirmod aliquid ei. In dictas alterum legendos pri. Mei id pertinax constituam.
-                        </p>
+                        </p> --}}
                     </div>
-                    <div class="paper-bottom">
+                    {{-- <div class="paper-bottom">
                         <a href="#" class="btn btn-primary">สั่งซื้อ</a>
-                    </div>
+                    </div> --}}
                     <div class="paper-wrapper-left"></div>
                     <div class="paper-wrapper-right"></div>
                 </div>

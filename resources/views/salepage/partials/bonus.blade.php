@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
-                    <h3>พิเศษสุด...!</h3>
+                    <h3>ใหม่ล่าสุด...!</h3>
                     <p style="font-size: 28px">แนวเฉลยข้อสอบ IJSO รอบแรก ปี 59 - 63 วิชาฟิสิกส์ เคมีและชีววิทยา แยกรายหัวข้อออกสอบ</p>
                 </div>
             </div>
