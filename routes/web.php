@@ -1,7 +1,9 @@
 <?php
 
 use App\Models\SubDomain;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $subdomains = SubDomain::all();
-    return view('welcome',[
-        'subdomains' => $subdomains
-    ]);
-});
+// Route::get('/', function () {
+//     $subdomains = SubDomain::all();
+//     return view('welcome',[
+//         'subdomains' => $subdomains
+//     ]);
+// });
+
+Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage')->middleware('checksalepageurl');
+
+Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

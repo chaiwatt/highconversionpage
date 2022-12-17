@@ -1,0 +1,133 @@
+.menu-cnt ul li {
+    font-size: 18px !important;
+    min-width: 165px;
+}
+.menu-cnt ul li a {
+    font-size: 18px !important;
+}
+.menu-cnt ul li a span{
+    font-size: 14px !important;
+    font-weight: 300;
+}
+.bannerTitle h1
+{
+    line-height: 1.7em;
+}
+.bannerTitle h1 span
+{
+    font-size: 1.5em;
+}
+.bannerTitle p
+{
+    font-size: 26px;
+    line-height:40px;
+}
+.bannerTitle .btnBuycourse
+{
+    font-size: 24px;
+}
+.bannerTitle .btnDownload
+{
+    font-size: 24px;
+    background: #ff578b;
+    border:1px solid #ff578b
+}
+.container .btnDownload:hover
+{
+    background: #ff3374;
+    border:1px solid #ff3374;
+    transition: 0.5s;
+}
+.paymentForm input[type="text"]
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+.paymentForm select option
+{
+    font-size: 16px !important;
+    font-weight: 300;
+    line-height: 10px;
+}
+.promotionMessage{
+    color: #ff3374;
+}
+.frontendSection .container p{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {  
+    50% { opacity: 0; }
+}
+@media(max-width: 768px)
+{
+    .bannerTitle .btnBuycourse
+    {
+        font-size: 22px;
+    }
+    .bannerTitle .btnDownload
+    {
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .bannerTitle h1
+    {
+        line-height: 1.2em;
+    }
+    .bannerTitle h1 span
+    {
+        font-size: 1.2em;
+    }
+    .bannerTitle p
+    {
+        font-size: 22px;
+        line-height:30px;
+    }
+    .container h2
+    {
+        font-size: 24px;
+        line-height:36px;
+    }
+ 
+    .btnBuycourse
+    {
+        z-index: 15001;
+    }
+    .btnDownload
+    {
+        z-index: 15000;
+    }
+    .slider li img
+    {
+        width: 300px
+    }
+    .in-visible-md {
+        display: none;
+    }
+}
+
+@media(max-width: 480px)
+{
+    .btnBuycourse
+    {
+        z-index: 15001;
+    }
+    .btnDownload
+    {
+        z-index: 15000;
+    }
+    .slider li img
+    {
+        width: 300px
+    }
+    .in-visible-sm {
+        display: none;
+    }
+
+}
