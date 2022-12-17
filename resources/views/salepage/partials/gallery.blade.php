@@ -1,10 +1,10 @@
-<div id="{{$salepagesection->salepagename}}" class="contain-wrapp gray-container">	
+<div id="{{$salepagesection->salepagename}}" class="contain-wrapp gray-container gellery">	
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading">
                     <h4>แนวเฉลยข้อสอบบางส่วน</h4>
-                    <p style="font-size: 24px">แนวเฉลยข้อสอบบางส่วน แยกตามหัวข้อการออกสอบ</p>
+                    <p >แนวเฉลยข้อสอบบางส่วน แยกตามหัวข้อการออกสอบ</p>
                 </div>
             </div>
         </div>

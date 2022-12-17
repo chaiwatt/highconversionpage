@@ -39,6 +39,10 @@
     font-size: 16px;
     line-height: 45px;
 }
+.gellery .section-heading p
+{
+    font-size: 24px;
+}
 
 @media(max-width: 480px)
 {
@@ -117,6 +121,11 @@
     }
     .purchase-section p
     {
+        line-height: 40px;
+    }
+    .gellery .section-heading p
+    {
+        font-size: 20px;
         line-height: 40px;
     }
 }
