@@ -63,7 +63,7 @@
     .introduce p
     {
         font-size: 0.7em;
-        line-height: 40px;
+        line-height: 50px;
     }
     .textbar h2
     {
@@ -150,6 +150,6 @@
 
     .parallax-wrapp .introduce span
     {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 }
