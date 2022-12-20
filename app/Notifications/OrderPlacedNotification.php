@@ -2,23 +2,35 @@
 
 namespace App\Notifications;
 
+use Carbon\Carbon;
+use App\Models\Transaction;
 use Illuminate\Bus\Queueable;
+use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
-use Illuminate\Notifications\Notification;
 
-class OrderPlacedNotification extends Notification
+class OrderPlacedNotification extends Notification implements ShouldQueue
 {
     use Queueable;
+    public $package;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($package)
     {
-        //
+        $this->package = $package;
+
+        if ($this->package['payload']['data']['status'] == 'successful' && $this->package['reciever_name'] == 'Admin'){
+            Transaction::where('charge_id',trim($this->package['payload']['data']['id']))->where('source_id',trim($this->package['payload']['data']['source']['id']))->update([
+                'status' => trim($this->package['payload']['data']['status']),
+                'paid_at' => trim($this->package['payload']['data']['paid_at']),
+            ]);
+        }
+
+        $this->delay(Carbon::now()->addSecond(10));
     }
 
     /**
@@ -40,10 +52,16 @@ class OrderPlacedNotification extends Notification
      */
     public function toMail($notifiable)
     {
+        $transaction = Transaction::where('charge_id',trim($this->package['payload']['data']['id']))
+        ->where('source_id',trim($this->package['payload']['data']['source']['id']))
+        ->first();
+
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+            ->from(env('MAIL_FROM_ADDRESS'), 'IJSO WORKSHEET')
+            ->subject($this->package['title'])
+            ->markdown("mail.template", [
+                'transaction' => $transaction,
+            ]);
     }
 
     /**
