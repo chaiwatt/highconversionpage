@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MediaTransaction;
 use App\Models\SalePageUrl;
 use Illuminate\Http\Request;
 use App\Models\SalepageSection;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -39,5 +41,13 @@ class HomeController extends Controller
                     'salepageurl' => SalePageUrl::where('user_id',$salepagesections->first()->id)->first()
                 ]
         );
+    }
+
+    public function getmediatb(){
+        //media_transactions
+        // return DB::connection('mysql_fullstacktrainingclass')->table('media_transactions')->get();
+        // dd('ok');\
+        $mediatransactions = MediaTransaction::all();
+        return $mediatransactions;
     }
 }
