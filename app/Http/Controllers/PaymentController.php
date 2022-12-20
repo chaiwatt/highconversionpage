@@ -8,6 +8,8 @@ use App\Models\MediaTransaction;
 use Illuminate\Support\Facades\URL;
 use ox01code\Omise\process\OmiseCharge;
 use ox01code\Omise\process\OmiseSource;
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\OrderPlacedNotification;
 
 class PaymentController extends Controller
 {
@@ -83,8 +85,25 @@ class PaymentController extends Controller
 
     public function redirect(Request $request)
     {
+        
+
+       
+
         $transaction = Transaction::where('source_id',trim($request->source))->first();
         $mediatransaction = MediaTransaction::where('source_id',trim($request->source))->first();
+
+        $pacakage = [
+            'title' => 'คำสั่งซื้อสำเร็จ',
+            'email' => $transaction->email,
+            'name' => $transaction->name,
+            'phone' => $transaction->phone,
+            'amount' => $transaction->amount
+          ];
+
+        Notification::route('mail', [
+            $transaction->email => $transaction->name,
+        ])->notify(new OrderPlacedNotification($pacakage));
+
         return view('thanks',[
             'transaction' => $transaction,
             'mediatransaction' => $mediatransaction,

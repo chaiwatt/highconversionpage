@@ -22,14 +22,6 @@ class OrderPlacedNotification extends Notification implements ShouldQueue
     public function __construct($package)
     {
         $this->package = $package;
-
-        if ($this->package['payload']['data']['status'] == 'successful' && $this->package['reciever_name'] == 'Admin'){
-            Transaction::where('charge_id',trim($this->package['payload']['data']['id']))->where('source_id',trim($this->package['payload']['data']['source']['id']))->update([
-                'status' => trim($this->package['payload']['data']['status']),
-                'paid_at' => trim($this->package['payload']['data']['paid_at']),
-            ]);
-        }
-
         $this->delay(Carbon::now()->addSecond(10));
     }
 
@@ -52,15 +44,11 @@ class OrderPlacedNotification extends Notification implements ShouldQueue
      */
     public function toMail($notifiable)
     {
-        $transaction = Transaction::where('charge_id',trim($this->package['payload']['data']['id']))
-        ->where('source_id',trim($this->package['payload']['data']['source']['id']))
-        ->first();
-
         return (new MailMessage)
             ->from(env('MAIL_FROM_ADDRESS'), 'IJSO WORKSHEET')
             ->subject($this->package['title'])
             ->markdown("mail.template", [
-                'transaction' => $transaction,
+                'package' => $this->package,
             ]);
     }
 
