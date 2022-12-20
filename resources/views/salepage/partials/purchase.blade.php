@@ -131,7 +131,7 @@
                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                
                                 <div class="clear">
-                                    <button type="button" id="purchase" class="button PurchaseBtn"><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button>
+                                    <button type="button" id="purchase" class="PurchaseBtn"><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button>
                                     {{-- <input type="button" value="สั่งซื้อ" name="subscribe" id="purchase" class="button PurchaseBtn"> --}}
                                 </div>
                             </div>

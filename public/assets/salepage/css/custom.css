@@ -3,7 +3,8 @@
     padding:30px;
     font-size:1.8em;
     width:200px;
-    margin-top: 30px;
+    margin-top: 30px;;
+    text-decoration: none !important;
 }
 
 .bonus-section .btn
@@ -101,6 +102,7 @@
         font-size: 1.5em;
         padding:20px;
         margin-top: 40px;
+        text-decoration: none;
     }
     .parallax-img
     {
