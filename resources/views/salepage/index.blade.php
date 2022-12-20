@@ -69,6 +69,10 @@
                                         // $("#spinner").hide();
                                         // $('#btnGetCharge').prop('disabled', false);
                                         // console.log(item);
+                                    },
+                                    close: function testt(){
+                                        console.log('closed')
+                                        clearInterval(checkPayment)
                                     }
                                 }
                             });
@@ -78,7 +82,7 @@
 
 
         function checkPrompayPaymentStatus(source,charge) {
-            // console.log(source + ' ' + charge)
+                console.log(source + ' ' + charge)
                 var formData = new FormData();
                 formData.append('source',source);
                 formData.append('charge',charge);

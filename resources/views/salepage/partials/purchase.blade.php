@@ -106,7 +106,8 @@
                         <h4 style="text-align: center">สั่งซื้อ รวมทุกวิชา 650 บาท</h4>
                         <!-- Begin MailChimp Signup Form -->
                         <div id="mc_embed_signup">
-                        {{-- <form action="http://99webpage.us7.list-manage.com/subscribe/post?u=d41833cf1dec1ae69161f6960&amp;id=84d2ca73ce" method="post" id="PurchaseBtn-form" name="PurchaseBtn-form" class="validate" target="_blank" novalidate=""> --}}
+                        {{-- <form action="{{route('getPrompayPaymentStatus')}}" method="post"> --}}
+                            @csrf
                             <div id="mc_embed_signup_scroll">
                                 <div class="mc-field-group">
                                     <label for="mce-FNAME">ชื่อ : </label>
@@ -114,7 +115,7 @@
                                 </div>
                                 <div class="mc-field-group">
                                     <label for="mce-EMAIL">นามสกุล : </label>
-                                    <input type="email" value="" name="lastname" class="required email" id="lastname" required>
+                                    <input type="text" value="" name="lastname" class="required email" id="lastname" required>
                                 </div>
                                 <div class="mc-field-group size1of2">
                                     <label for="mce-FPHONE">เบอร์โทรศัพท์ : </label>
@@ -131,9 +132,9 @@
                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                
                                 <div class="clear">
-                                    {{-- <button type="button" id="purchase" class="button PurchaseBtn"><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button> --}}
+                                    
                                     <button id="purchasefile" type="button" class="btn btn-primary btn-parallax-purchase" style="padding: 20px;font-size:22px;font-weight:600" ><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button>
-                                    {{-- <input type="button" value="สั่งซื้อ" name="subscribe" id="purchase" class="button PurchaseBtn"> --}}
+                                    {{-- <button id="purchasefile" type="submit" class="btn btn-primary btn-parallax-purchase" style="padding: 20px;font-size:22px;font-weight:600" ><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button> --}}
                                 </div>
                             </div>
                         {{-- </form> --}}
