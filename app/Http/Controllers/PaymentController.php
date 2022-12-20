@@ -41,20 +41,25 @@ class PaymentController extends Controller
             
             $transaction = new Transaction();
             $transaction->storename = $source['store_name'];
-            // $transaction->name = $request->name;
-            // $transaction->lastname = $request->lastname;
+            $transaction->name = $request->name;
+            $transaction->lastname = $request->lastname;
             $transaction->amount =$amount;
             $transaction->discount = floatval($amount) * $discount;
             // $transaction->address = $request->address;
-            // $transaction->email = $request->email;
-            // $transaction->phone = $request->phone;
+            $transaction->email = $request->email;
+            $transaction->phone = $request->phone;
             $transaction->source_id = $source['id'];
             $transaction->charge_id = $charge['id'];
             $transaction->save();
         }
 
-        // EmailBox::send('joerocknpc@gmail.com','มีรายการสั่งซื้อ','โปรดตรวจสอบรายการสั่งซื้อ');
-        return $charge['source']['scannable_code']['image']['download_uri'];
+        $result = collect([
+            'image' => $charge['source']['scannable_code']['image']['download_uri'],
+            'source_id' => $source['id'],
+            'charge_id' => $charge['id'],
+            ]);
+
+        return $result; //$charge['source']['scannable_code']['image']['download_uri'];
     }
 
     public function redirect(Request $request)

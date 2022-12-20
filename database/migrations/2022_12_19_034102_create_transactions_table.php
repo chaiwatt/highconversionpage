@@ -26,6 +26,7 @@ return new class extends Migration
             $table->string('source_id')->nullable();
             $table->string('charge_id')->nullable();
             $table->string('paymentdate')->nullable();
+            $table->string('paid_at')->nullable();
             $table->string('status')->default('pending');
             $table->timestamps();
         });

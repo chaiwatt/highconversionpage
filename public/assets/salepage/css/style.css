@@ -707,7 +707,7 @@ Mailchimp form
 	padding-right:20px;
 }
 
-#mc-embedded-subscribe{
+.PurchaseBtn{
 	position:relative;
 	border-radius:4px;
 	padding: 15px 30px;
@@ -721,7 +721,7 @@ Mailchimp form
 	margin-top:10px;
 }
 
-#form-inline-wrapp #mc-embedded-subscribe{
+#form-inline-wrapp .PurchaseBtn{
 	margin-top:0;
 }
 

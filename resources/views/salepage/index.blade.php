@@ -11,6 +11,7 @@
 
 @push('js')
 	<script>
+        $("#spinner").hide();
 		$('.popup-with-zoom-anim').magnificPopup({
                 type: 'inline',
 
@@ -26,12 +27,24 @@
                 removalDelay: 300,
                 mainClass: 'my-mfp-zoom-in'
         });
-		$(document).on('click', '.purchasebtn', function(e) {
-
-
-			makeCharge($(this).data('id')).then(data => {
+		$(document).on('click', '#purchase', function(e) {
+            if (validateInput() == false){
+                Swal.fire(
+                    {
+                        title: 'ผิดพลาด',
+                        text: "กรุณากรอกข้อมูลให้ครบถ้วน!",
+                        icon: 'warning',
+                        confirmButtonText: 'ตกลง',
+                        confirmButtonColor: '#47b2e4',
+                    }
+                )
+                return;
+            }
+            $("#spinner").show();
+			makeCharge($(this).data('name'),$(this).data('lastname'),$(this).data('phone'),$(this).data('email')).then(data => {
+                $("#spinner").hide();
                 console.log(data)
-                        $('#qrcode').attr("src", data);
+                        $('#qrcode').attr("src", data['image']);
                             $("#qrcode").on("load", function() {
                                 $.magnificPopup.open({
                                 items: {
@@ -47,10 +60,11 @@
                                 preloader: false,
                                 
                                 midClick: true,
-                                removalDelay: 50,
+                                removalDelay: 300,
                                 mainClass: 'my-mfp-zoom-in',
                                 callbacks: {
                                     elementParse: function(item) {
+                                        
                                         // $("#spinner").hide();
                                         // $('#btnGetCharge').prop('disabled', false);
                                         // console.log(item);
@@ -60,14 +74,17 @@
                         })
                     })  
 		});
-		function makeCharge(productcode){
+		function makeCharge(name,lastname,phone,email){
                 return new Promise((resolve, reject) => {
                     $.ajax({
                     url: `${route.url}/getCharge`,
                     type: 'POST',
                     headers: {"X-CSRF-TOKEN":route.token},
                     data: {
-                        'productcode': productcode
+                        'name': name,
+                        'lastname': lastname,
+                        'phone': phone,
+                        'email': email
                     },
                     success: function(data) {
                         resolve(data)
@@ -78,6 +95,14 @@
                     })
                 })
             }
+
+        function validateInput(){
+            if($('#name').val() !== '' && $('#lastname').val() !== '' && $('#email').val() !== '' && $('#phone').val() !== '' ){
+                return true
+            }else{
+                return false
+            }
+        }
 	</script>
 @endpush
 

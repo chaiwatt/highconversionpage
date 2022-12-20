@@ -1,7 +1,7 @@
 <div id="{{$salepagesection->salepagename}}" class="contain-wrapp wall-container padding-bot60">	
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+        <div class="row justify-content-md-center">
+            <div class="col-md-8">
                 <div class="paper-wrapper">
                     <div class="paper-header">
                         <h3>IJSO คืออะไร</h3>
