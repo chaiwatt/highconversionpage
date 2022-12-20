@@ -11,6 +11,7 @@
 
 @push('js')
 	<script>
+         var checkPayment ;
         $("#spinner").hide();
 		$('.popup-with-zoom-anim').magnificPopup({
                 type: 'inline',
@@ -40,7 +41,6 @@
                 )
                 return;
             }
-            console.log('hh')
             $("#spinner").show();
 			makeCharge($(this).data('name'),$(this).data('lastname'),$(this).data('phone'),$(this).data('email')).then(data => {
                 $("#spinner").hide();
@@ -65,7 +65,7 @@
                                 mainClass: 'my-mfp-zoom-in',
                                 callbacks: {
                                     elementParse: function(item) {
-                                        
+                                        checkPayment = setInterval(checkPrompayPaymentStatus, 3000,data['source_id'],data['charge_id']);
                                         // $("#spinner").hide();
                                         // $('#btnGetCharge').prop('disabled', false);
                                         // console.log(item);
@@ -75,6 +75,31 @@
                         })
                     })  
 		});
+
+
+        function checkPrompayPaymentStatus(source,charge) {
+            // console.log(source + ' ' + charge)
+                var formData = new FormData();
+                formData.append('source',source);
+                formData.append('charge',charge);
+                    $.ajax({
+                        url: `${route.url}/getPrompayPaymentStatus`,
+                        type: 'POST',
+                        headers: {"X-CSRF-TOKEN":route.token},
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function(data){
+                            console.log(data)
+                            if (data['status'] == 1){
+                                clearInterval(checkPayment);
+                                window.location.replace(data['uri']);
+                            }
+                    }
+                });
+            }
+
+
 		function makeCharge(name,lastname,phone,email){
                 return new Promise((resolve, reject) => {
                     $.ajax({

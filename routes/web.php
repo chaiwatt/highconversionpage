@@ -24,15 +24,18 @@ use App\Http\Controllers\PaymentController;
 //     ]);
 // });
 
-Route::get('/getmediatb', [HomeController::class, 'getmediatb'])->name('getmediatb');
+// Route::get('/getmediatb', [HomeController::class, 'getmediatb'])->name('getmediatb');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage')->middleware('checksalepageurl');
 Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect');
 
+Route::post('getCharge', [PaymentController::class, 'getCharge'])->name('getCharge');
+Route::post('getPrompayPaymentStatus', [PaymentController::class, 'getPrompayPaymentStatus'])->name('getPrompayPaymentStatus');
+
 Auth::routes();
 
-Route::post('getCharge', [PaymentController::class, 'getCharge'])->name('getCharge');
+
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
