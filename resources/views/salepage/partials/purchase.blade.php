@@ -132,7 +132,7 @@
                                
                                 <div class="clear">
                                     {{-- <button type="button" id="purchase" class="button PurchaseBtn"><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button> --}}
-                                    <a href="#" id="purchase" class="btn btn-primary btn-parallax-purchase" style="padding: 20px;font-size:22px;font-weight:600" ><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</a>
+                                    <a id="purchase" class="btn btn-primary btn-parallax-purchase" style="padding: 20px;font-size:22px;font-weight:600" ><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</a>
                                     {{-- <input type="button" value="สั่งซื้อ" name="subscribe" id="purchase" class="button PurchaseBtn"> --}}
                                 </div>
                             </div>
