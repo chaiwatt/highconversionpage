@@ -73,6 +73,11 @@
 }
 @media(max-width: 480px)
 {
+    .mc-field-group input
+    {
+        font-size: 16px !important;
+        font-weight: 300;
+    }
     .bonus-box img
     {
         width: 80%;
