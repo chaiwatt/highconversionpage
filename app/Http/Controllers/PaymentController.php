@@ -75,7 +75,7 @@ class PaymentController extends Controller
         if (!empty($transaction)){
             $result = collect([
                 'status' => 1,
-                'uri' => URL::to('/redirect?source='.$source_id),
+                'uri' => URL::to('ijsoworksheet/redirect?source='.$source_id),
                 ]);
         }
         return $result; //$charge['source']['scannable_code']['image']['download_uri'];
