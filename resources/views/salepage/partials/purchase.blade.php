@@ -99,8 +99,8 @@
                 </div>
             </div>
         </div> --}}
-        <div class="row justify-content-md-center">
-            <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
                 <div id="main-form-wrapp">
                     <div class="main-form">
                         <h4 style="text-align: center">สั่งซื้อ รวมทุกวิชา 650 บาท</h4>
@@ -131,8 +131,7 @@
                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                
                                 <div class="clear">
-                                    {{-- <button type="button" id="purchase" class="PurchaseBtn"><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button> --}}
-                                    <a href="#purchase"  id="purchase" class="btn btn-primary PurchaseBtn" ><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</a>
+                                    <button type="button" id="purchase" class="button PurchaseBtn"><i id="spinner" class="fa-solid fa-spinner spinner" style="margin-right: 5px" ></i>สั่งซื้อ</button>
                                     {{-- <input type="button" value="สั่งซื้อ" name="subscribe" id="purchase" class="button PurchaseBtn"> --}}
                                 </div>
                             </div>

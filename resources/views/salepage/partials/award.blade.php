@@ -1,7 +1,7 @@
 <div id="{{$salepagesection->salepagename}}" class="contain-wrapp dark-container">	
     <div class="container" style="margin-top: -100px">
-        <div class="row justify-content-md-center">
-            <div class="col-md-8 text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
                 <div class="guaranted-box">
                     {{-- <img src="{{asset('assets/salepage/images/award.png')}}" class="img-responsive" style="width: 350px" alt="" /> --}}
                     <h3>น้องโปรแกรม<br>IJSO รอบที่ 3 ปี 2564</h3>

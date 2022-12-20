@@ -154,7 +154,7 @@
                 <span><img src="{{asset('assets/images/logo.png')}}" alt="" /></span>
             </div>
         </div>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         {{-- <script src="{{asset('assets/js/parallax.min.js')}}"></script> --}}
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="{{asset('assets/js/main.js')}}"></script>
@@ -171,7 +171,7 @@
         <script defer src="{{asset('assets/js/cookie/cookieconsent.js')}}"></script>
         <script defer src="{{asset('assets/js/cookie/cookieconsent-init.js')}}"></script>
         
-        
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             var route = {
                 url: "{{ url('/') }}",
