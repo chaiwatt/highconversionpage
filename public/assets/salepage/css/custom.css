@@ -66,6 +66,11 @@
 {
     line-height: 50px;
 }
+.mc-field-group input
+{
+    font-size: 18px !important;
+    font-weight: 300;
+}
 @media(max-width: 480px)
 {
     .bonus-box img
