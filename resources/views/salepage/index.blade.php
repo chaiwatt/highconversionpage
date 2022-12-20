@@ -27,7 +27,7 @@
                 removalDelay: 300,
                 mainClass: 'my-mfp-zoom-in'
         });
-		$(document).on('click', '#purchase', function(e) {
+		$(document).on('click', '#purchasefile', function(e) {
             if (validateInput() == false){
                 Swal.fire(
                     {
@@ -40,6 +40,7 @@
                 )
                 return;
             }
+            console.log('hh')
             $("#spinner").show();
 			makeCharge($(this).data('name'),$(this).data('lastname'),$(this).data('phone'),$(this).data('email')).then(data => {
                 $("#spinner").hide();
