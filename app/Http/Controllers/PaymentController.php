@@ -75,7 +75,7 @@ class PaymentController extends Controller
         if (!empty($transaction)){
             $result = collect([
                 'status' => 1,
-                'uri' => URL::to('ijsoworksheet/redirect?source='.$source_id),
+                'uri' => URL::to('/redirect?source='.$source_id),
                 ]);
         }
         return $result; //$charge['source']['scannable_code']['image']['download_uri'];
@@ -83,7 +83,7 @@ class PaymentController extends Controller
 
     public function redirect(Request $request)
     {
-        $transaction = MediaTransaction::where('source_id',trim($request->source))->first();
+        $transaction = Transaction::where('source_id',trim($request->source))->first();
         return view('thanks',[
             'transaction' => $transaction
         ]);
