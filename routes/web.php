@@ -4,6 +4,7 @@ use App\Models\SubDomain;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage')->middleware('checksalepageurl');
+Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect');
 
 Auth::routes();
+
+Route::post('getCharge', [PaymentController::class, 'getCharge'])->name('getCharge');
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

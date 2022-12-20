@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="keywords" content="Sales page, landing page template, HTML5 template, responsive html5 template, bootstrap landing page, Affiliate marketing, eBook template, product landing page, email marketing, bootstrap template, marketing landing page, campaign monitor, active campaign, startup template, product showcase">
     <meta name="description" content="IMSolutions is a sales page and landing page HTML5 template for affiliate marketing very suitable for internet marketing, product launch, download software eBook landing page, and compaign monitoring">
@@ -24,6 +25,7 @@
     <!-- Custom styles for this template -->
     <link href="{{asset('/assets/salepage/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('/assets/salepage/css/custom.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
     <!-- Theme skins -->
     <link id="skin" href="{{asset('/assets/salepage/css/skins/default.css')}}" rel="stylesheet">
 
@@ -63,10 +65,10 @@
     {{-- <script src="js/ie10-viewport-bug-workaround.js"></script> --}}
 	
 	<!-- Custom form -->
-	<script src="{{asset('assets/salepage/js/form/jcf.js')}}"></script>
+	{{-- <script src="{{asset('assets/salepage/js/form/jcf.js')}}"></script>
 	<script src="{{asset('assets/salepage/js/form/jcf.scrollable.js')}}"></script>
 	<script src="{{asset('assets/salepage/js/form/jcf.select.js')}}"></script>
-	
+	 --}}
 	<!-- Custom checkbox and radio -->
 	<script src="{{asset('assets/salepage/js/checkator/fm.checkator.jquery.js')}}"></script>
 	<script src="{{asset('assets/salepage/js/checkator/setting.js')}}"></script>
@@ -74,6 +76,7 @@
 	<!-- parallax -->
 	<script src="{{asset('assets/salepage/js/parallax/jquery.parallax-1.1.3.js')}}"></script>
 	<script src="{{asset('assets/salepage/js/parallax/setting.js')}}"></script>
+  <script src="{{asset('assets/js/magnific-popup.min.js')}}"></script>
 	
     <!-- Countdown -->
     <script src="{{asset('assets/salepage/js/countdown/lodash.min.js')}}"></script>  
@@ -104,6 +107,13 @@
 
 	<!-- Theme option-->
 	{{-- <script src="js/theme-option/demosetting.html"></script>	 --}}
+  <script>
+    var route = {
+        url: "{{ url('/') }}",
+        token: $('meta[name="csrf-token"]').attr('content'),
+    };
+</script>
+  @stack('js')
   </body>
 
 </html>

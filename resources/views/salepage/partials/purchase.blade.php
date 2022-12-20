@@ -28,7 +28,11 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-default">ซื้อ</a>
+                      {{--   <form action="{{route('getCharge')}}" method="post">
+                            @csrf
+                            <button type="submit" id="phy01" data-id="phy01" class="btn btn-default purchasebtn">ซื้อ</button>
+                        </form> --}}
+                        <button id="phy01" data-id="phy01" class="btn btn-default purchasebtn">ซื้อ</button>
                     </div>
                 </div>
             </div>
@@ -50,7 +54,7 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-default">ซื้อ</a>
+                        <button id="chem01" data-id="chem01" class="btn btn-default purchasebtn">ซื้อ</button>
                     </div>
                 </div>
             </div>
@@ -72,7 +76,7 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-default">ซื้อ</a>
+                        <button id="bio01" data-id="bio01" class="btn btn-default purchasebtn">ซื้อ</button>
                     </div>
                 </div>
             </div>
@@ -94,7 +98,7 @@
                         </ul>
                     </div>
                     <div class="pricing-action">
-                        <a href="#" class="btn btn-primary">ซื้อ</a>
+                        <button id="all01" data-id="all01" class="btn btn-primary purchasebtn">ซื้อ</button>
                     </div>
                 </div>
             </div>

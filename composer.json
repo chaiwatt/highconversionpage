@@ -25,7 +25,8 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "ox01code\\Omise\\": "src/"
         }
     },
     "autoload-dev": {
@@ -50,7 +51,10 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [],
+            "providers": [
+                "ox01code\\Omise\\OmiseServiceProvider"
+            ]
         }
     },
     "config": {
