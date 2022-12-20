@@ -82,7 +82,7 @@
 
 
         function checkPrompayPaymentStatus(source,charge) {
-                console.log(source + ' ' + charge)
+                // console.log(source + ' ' + charge)
                 var formData = new FormData();
                 formData.append('source',source);
                 formData.append('charge',charge);
@@ -94,7 +94,7 @@
                         contentType: false,
                         processData: false,
                         success: function(data){
-                            console.log(data)
+                            // console.log(data)
                             if (data['status'] == 1){
                                 clearInterval(checkPayment);
                                 window.location.replace(data['uri']);

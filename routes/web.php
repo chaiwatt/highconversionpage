@@ -28,8 +28,8 @@ use App\Http\Controllers\PaymentController;
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage')->middleware('checksalepageurl');
-Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect');
-
+// Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect');
+Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect')->middleware('paidcheck');
 Route::post('getCharge', [PaymentController::class, 'getCharge'])->name('getCharge');
 Route::post('getPrompayPaymentStatus', [PaymentController::class, 'getPrompayPaymentStatus'])->name('getPrompayPaymentStatus');
 

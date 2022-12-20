@@ -63,15 +63,6 @@ class PaymentController extends Controller
         return $result; //$charge['source']['scannable_code']['image']['download_uri'];
     }
 
-    public function redirect(Request $request)
-    {
-        $transaction = Transaction::where('source_id',trim($request->source))->first();
-        // dd($transaction)
-        return view('thanks',[
-            'transaction' => $transaction
-        ]);
-    }
-
     public function getPrompayPaymentStatus(Request $request){
         $source_id = $request->source;
         $charge_id = $request->charge;
@@ -87,12 +78,15 @@ class PaymentController extends Controller
                 'uri' => URL::to('/redirect?source='.$source_id),
                 ]);
         }
-
-        // $result = collect([
-        //     'source_id' => $source_id,
-        //     'charge_id' => $charge_id,
-        //     ]);
-
         return $result; //$charge['source']['scannable_code']['image']['download_uri'];
     }
+
+    public function redirect(Request $request)
+    {
+        $transaction = MediaTransaction::where('source_id',trim($request->source))->first();
+        return view('thanks',[
+            'transaction' => $transaction
+        ]);
+    }
+
 }
