@@ -3,7 +3,6 @@
 namespace App\Notifications;
 
 use Carbon\Carbon;
-use App\Models\Transaction;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -44,6 +43,7 @@ class OrderPlacedNotification extends Notification implements ShouldQueue
      */
     public function toMail($notifiable)
     {
+        // dd($this->package['title']);
         return (new MailMessage)
             ->from(env('MAIL_FROM_ADDRESS'), 'IJSO WORKSHEET')
             ->subject($this->package['title'])
