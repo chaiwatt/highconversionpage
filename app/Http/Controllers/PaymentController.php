@@ -93,6 +93,18 @@ class PaymentController extends Controller
         $mediatransaction = MediaTransaction::where('source_id',trim($request->source))->first();
 
         $pacakage = [
+            'title' => 'คำสั่งซื้อ ijso worksheet สำเร็จ',
+            'email' => 'joerocknpc@gmail.com',
+            'name' => 'Admin',
+            'phone' => $transaction->phone,
+            'amount' => $transaction->amount
+          ];
+
+        Notification::route('mail', [
+            $transaction->email => $transaction->name,
+        ])->notify(new OrderPlacedNotification($pacakage));
+
+        $pacakage = [
             'title' => 'คำสั่งซื้อสำเร็จ',
             'email' => $transaction->email,
             'name' => $transaction->name,
