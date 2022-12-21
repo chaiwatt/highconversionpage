@@ -27,13 +27,13 @@ class HomeController extends Controller
      */
     public function index(){
         $post = [
-            'title' => 'post title',
+            'title' => 'ทดสอบการส่งเมล',
             'slug' => 'post-slug'
         ];
         Notification::route('mail', [
             'joerocknpc@gmail.com' => 'chaiwat',
         ])->notify(new OrderPlacedNofication($post));
-        dd('done');
+        dd('its done');
     }
 
     public function salepage()
