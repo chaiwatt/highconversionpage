@@ -36,6 +36,12 @@
                     {{$mediatransaction->paidtime}} น.
                 </p>
             </li>
+            <li>
+                <h3>ไฟล์</h3>
+                <p style="font-weight: 300">
+                    <a href="{{asset('assets/upload/ijso59_63_all.pdf')}}">ดาวน์โหลด</a>
+                </p>
+            </li>
         </ul>
     </div>
 </section>
