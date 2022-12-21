@@ -91,4 +91,3 @@ class SalepageSectionsTableSeeder extends Seeder
         ]);
     }
 }
-

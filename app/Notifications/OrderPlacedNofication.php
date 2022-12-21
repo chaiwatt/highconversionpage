@@ -8,20 +8,19 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class OrderPlacedNotification extends Notification implements ShouldQueue
+class OrderPlacedNofication extends Notification implements ShouldQueue
 {
     use Queueable;
-    public $package;
-
+    public $post;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct($package)
+    public function __construct($post)
     {
-        $this->package = $package;
-        $this->delay(Carbon::now()->addSecond(10));
+        $this->post = $post; 
+        $this->delay(Carbon::now()->addSecond(10)); // Delay เผื่อ process
     }
 
     /**
@@ -43,13 +42,10 @@ class OrderPlacedNotification extends Notification implements ShouldQueue
      */
     public function toMail($notifiable)
     {
-        // dd($this->package['title']);
         return (new MailMessage)
-            ->from(env('MAIL_FROM_ADDRESS'), 'IJSO WORKSHEET')
-            ->subject($this->package['title'])
-            ->markdown("mail.template", [
-                'package' => $this->package,
-            ]);
+                    ->from(env('MAIL_FROM_ADDRESS'),'Admin')
+                    ->subject($this->post['title'])
+                    ->markdown("mail.test", [ 'post' => $this->post, ]);
     }
 
     /**

@@ -1,10 +1,8 @@
 <?php
 
-use App\Models\SubDomain;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,28 +14,15 @@ use App\Http\Controllers\PaymentController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', [HomeController::class, 'index'])->name('index');
 // Route::get('/', function () {
-//     $subdomains = SubDomain::all();
-//     return view('welcome',[
-//         'subdomains' => $subdomains
-//     ]);
+//     return view('welcome');
 // });
 
-// Route::get('/getmediatb', [HomeController::class, 'getmediatb'])->name('getmediatb');
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
-
-// Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect');
-Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect')->middleware('paidcheck');
 Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage')->middleware('checksalepageurl');
-Route::post('getCharge', [PaymentController::class, 'getCharge'])->name('getCharge');
-Route::post('getPrompayPaymentStatus', [PaymentController::class, 'getPrompayPaymentStatus'])->name('getPrompayPaymentStatus');
 
 Auth::routes();
 
-
-
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 

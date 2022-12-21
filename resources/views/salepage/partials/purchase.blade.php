@@ -111,19 +111,19 @@
                             <div id="mc_embed_signup_scroll">
                                 <div class="mc-field-group">
                                     <label for="mce-FNAME">ชื่อ : </label>
-                                    <input type="text" value="" name="name" class="required" id="name" required>
+                                    <input type="text" name="name" class="required" id="name" required value="ฟ้าใส">
                                 </div>
                                 <div class="mc-field-group">
                                     <label for="mce-EMAIL">นามสกุล : </label>
-                                    <input type="text" value="" name="lastname" class="required email" id="lastname" required>
+                                    <input type="text"  name="lastname" class="required email" id="lastname" required value="ทวีจันทร์">
                                 </div>
                                 <div class="mc-field-group size1of2">
                                     <label for="mce-FPHONE">เบอร์โทรศัพท์ : </label>
-                                    <input type="text" name="phone" class="" value="" id="phone" required>
+                                    <input type="text" name="phone" class="" id="phone" required value="0851245114">
                                 </div>
                                 <div class="mc-field-group size1of2">
                                     <label for="mce-FPHONE">อีเมล : </label>
-                                    <input type="email" name="email" class="" value="" id="email" required>
+                                    <input type="email" name="email" class="" id="email" required value="fahsaitharnchanok@gmail.com">
                                                   
                                 </div>
                                 <div id="mce-responses" class="clear">

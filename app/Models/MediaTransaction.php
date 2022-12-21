@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class MediaTransaction extends Model
 {
     use HasFactory;
+
     public $connection = 'mysql_fullstacktrainingclass';
 
     public function getPaidTimeAttribute()

@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\SalePageUrl;
 use Illuminate\Http\Request;
 use App\Models\SalepageSection;
-use App\Models\MediaTransaction;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\URL;
+use App\Notifications\OrderPlacedNofication;
+use Illuminate\Support\Facades\Notification;
 
 class HomeController extends Controller
 {
@@ -16,20 +15,27 @@ class HomeController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        // $this->middleware('auth');
+    }
 
     /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('index');
+    public function index(){
+        $post = [
+            'title' => 'post title',
+            'slug' => 'post-slug'
+        ];
+        Notification::route('mail', [
+            'joerocknpc@gmail.com' => 'chaiwat',
+        ])->notify(new OrderPlacedNofication($post));
+        dd('done');
     }
+
     public function salepage()
     {
         $salepageurls = SalePageUrl::pluck('user_id')->toArray();
@@ -45,9 +51,4 @@ class HomeController extends Controller
     }
 
 
-
-    // public function getmediatb(){
-    //     $mediatransactions = MediaTransaction::all();
-    //     return $mediatransactions;
-    // }
 }

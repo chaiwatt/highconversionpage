@@ -13,13 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('media_transactions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('sale_page_url_id');
-            $table->foreign('sale_page_url_id')->references('id')->on('sale_page_urls')->onDelete('cascade');
-            $table->string('product_code')->nullable();
-            $table->string('name')->nullable();
-            $table->double('price',10,2)->default(0);
             $table->timestamps();
         });
     }
@@ -31,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('media_transactions');
     }
 };
