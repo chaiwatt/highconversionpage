@@ -42,7 +42,7 @@
                 return;
             }
             $("#spinner").show();
-			makeCharge($('#name').val(),$('#lastname').val(),$('#email').val(),$('#phone').val()).then(data => {
+			makeCharge($('#name').val(),$('#lastname').val(),$('#phone').val(),$('#email').val()).then(data => {
                 $("#spinner").hide();
                 console.log(data)
                         $('#qrcode').attr("src", data['image']);

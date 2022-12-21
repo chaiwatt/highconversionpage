@@ -11,15 +11,15 @@ use Illuminate\Notifications\Messages\MailMessage;
 class OrderPlacedNofication extends Notification implements ShouldQueue
 {
     use Queueable;
-    public $post;
+    public $package;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct($post)
+    public function __construct($package)
     {
-        $this->post = $post; 
+        $this->package = $package; 
         $this->delay(Carbon::now()->addSecond(10)); // Delay เผื่อ process
     }
 
@@ -44,8 +44,8 @@ class OrderPlacedNofication extends Notification implements ShouldQueue
     {
         return (new MailMessage)
                     ->from(env('MAIL_FROM_ADDRESS'),'Admin')
-                    ->subject($this->post['title'])
-                    ->markdown("mail.test", [ 'post' => $this->post, ]);
+                    ->subject($this->package['title'])
+                    ->markdown("mail.template", [ 'package' => $this->package, ]);
     }
 
     /**

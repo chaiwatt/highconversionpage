@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,10 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 // });
 
 
+Route::get('redirect', [PaymentController::class, 'redirect'])->name('redirect')->middleware('paidcheck');
 Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage')->middleware('checksalepageurl');
+Route::post('getCharge', [PaymentController::class, 'getCharge'])->name('getCharge');
+Route::post('getPrompayPaymentStatus', [PaymentController::class, 'getPrompayPaymentStatus'])->name('getPrompayPaymentStatus');
 
 Auth::routes();
 

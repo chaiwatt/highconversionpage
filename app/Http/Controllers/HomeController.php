@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\SalePageUrl;
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 use App\Models\SalepageSection;
+use App\Models\MediaTransaction;
 use App\Notifications\OrderPlacedNofication;
 use Illuminate\Support\Facades\Notification;
 
@@ -26,14 +28,18 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index(){
-        $post = [
+
+        // $transaction = Transaction::where('source_id','src_test_5u7d1yb9claoeypo8vt')->first();
+        // // $mediatransaction = MediaTransaction::where('source_id',trim($request->source))->first();
+        // dd($transaction);
+        $package = [
             'title' => 'ทดสอบการส่งเมล',
             'slug' => 'post-slug'
         ];
         Notification::route('mail', [
             'joerocknpc@gmail.com' => 'chaiwat',
-        ])->notify(new OrderPlacedNofication($post));
-        dd('its done');
+        ])->notify(new OrderPlacedNofication($package));
+        dd('its ok');
     }
 
     public function salepage()
