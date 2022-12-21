@@ -20,7 +20,7 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 // });
 
 
-Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage')->middleware('checksalepageurl');
+Route::get('/{url}', [HomeController::class, 'salepage'])->name('salepage');//->middleware('checksalepageurl');
 
 Auth::routes();
 
