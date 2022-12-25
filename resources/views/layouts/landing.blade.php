@@ -16,9 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <title>Full-Stack Training Class| คอร์สเรียน Full-Stack developper</title>
-    <meta name="description" content="Full-Stack Training Class เป็นสถาบันสอน Full-Stack developper, คอร์สเรียน Laravel Full-Stack, คอร์สเรียน System admin เรามีประสบการณ์การสอนกว่าสิบปี และพัฒนาเว็บแอพลิเคชั่นโครงการตั้งแต่ 1 ล้านถึง 10 ล้านบาท เรียนกับเราคุณจะรับงานเองได้อย่างแน่นอน">
-    <meta name="keywords" content="สอน Full-Stack developper, สอน Laravel Full-Stack, สอน System admin">
+    <title>เซลเพจ| เซลเพจเพิ่ม conversion</title>
+    <meta name="description" content="เซลเพจ สร้าง Sellpage ง่าย ๆ แค่ลากวางแล้วใส่คอนเทนต์ เรามี Salepage หลากหลายเหมาะสำหรับสินค้าหลายกลุ่มทั้งสินค้า Shipping, สินค้า Digital มีระบบเชื่อมต่อกับ Payment gateway">
+    <meta name="keywords" content="เซลเพจ ,เพจหน้าเดียวเพิ่ม conversion">
 
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap-grid.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
@@ -52,19 +52,19 @@
             <div class="menu-cnt">
                 <ul>
                     <li>
-                        <a href="#overview">เรียนอะไรบ้าง<span>ภาพรวมคอร์ส</span></a>
+                        <a href="#overview">ภาพรวม<span>ภาพรวมบริการ</span></a>
                     </li>
                     <li>
-                        <a href="#course">คอร์สเรียน<span>รายละเอียดคอร์ส</span></a>
+                        <a href="#details">รายละเอียด<span>รายละเอียดเซลเพจ</span></a>
                     </li>
                     <li>
-                        <a href="#trainingroom">ห้องเรียน<span>รายละเอียดห้องอบรม</span></a>
+                        <a href="#example">ตัวอย่าง<span>ตัวอย่างเซลเพจ</span></a>
                     </li>
                     <li>
-                        <a href="#result">ผลงาน<span>ผลงานบางส่วน</span></a>
+                        <a href="#plan">แพลน<span>ราคาและแพลน</span></a>
                     </li>
                     <li>
-                        <a href="#purchase">ซื้อคอร์ส<span>สั่งซื้อคอร์สเรียน</span></a>
+                        <a href="#purchase">สั่งซื้อ<span>สั่งซื้อเซลเพจ</span></a>
                     </li>
                 </ul>
        
@@ -94,22 +94,23 @@
                     <div class="menu-inner menu-inner-vertical">
                         <ul>
                             <li>
-                                <a href="{{'/'}}#overview">เรียนอะไรบ้าง</a>
+                                <a href="{{'/'}}#overview">ภาพรวม</a>
                             </li>
                             <li>
-                                <a href="{{'/'}}#course">คอร์สเรียน</a>
+                                <a href="{{'/'}}#details">รายละเอียด</a>
                             </li>
                             <li>
-                                <a href="{{'/'}}#trainingroom">ห้องเรียน</a>
+                                <a href="{{'/'}}#example">ตัวอย่าง</a>
                             </li>
                             <li>
-                                <a href="{{'/'}}#result">ผลงาน</a>
+                                <a href="{{'/'}}#plan">แพลน</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
-                    <h4>นโยบายของธุรกิจ</h4>
+                    {{-- <h4>นโยบายของธุรกิจ</h4>
                     <div class="menu-inner menu-inner-vertical">
                         <ul>
                             <li>
@@ -122,7 +123,7 @@
                                 <a href="/policy">นโยบายการคืนเงิน</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-lg-4">
                     <h4>ติดต่อ</h4>
@@ -132,7 +133,7 @@
                                 <span style="font-size: 15px;color:#c2cad8">บริษัท เอ็นพีซีโซลูชั่น แอนด์ เซอร์วิส จำกัด</span>
                             </li> --}}
                             <li>
-                               <span style="font-size: 15px;font-weight:300;color:#c2cad8"> 105 หมู่ที่ 8 ตำบลเหมืองง่า อำเภอเมือง จังหวัดลำพูน 51000<br>อีเมล: fullstacktrainingclass@gmail.com<br>โทรศัพท์: 053-093254</span>
+                               <span style="font-size: 15px;font-weight:300;color:#c2cad8"> 105 หมู่ที่ 8 ตำบลเหมืองง่า อำเภอเมือง จังหวัดลำพูน 51000<br>อีเมล: highconversionpage@gmail.com<br>โทรศัพท์: 053-093254</span>
                             </li>
                         </ul>
                     </div>
@@ -149,7 +150,7 @@
         <div class="footer-bar">
             <div class="container">
                 {{-- <span>© Copyright 2022. บริษัท เอ็นพีซี โซลูชั่น แอนด์ เซอร์วิส จำกัด <a target="_blank" href="https://npcsolutionandservice.com/">>>เข้าสู่เว็บไซต์</a></span> --}}
-                <span>© Copyright 2022-2023. <a href="{{url('/')}}">Full-Stack Training Class</a></span>
+                <span>© Copyright 2022-2023. <a href="{{url('/')}}">High Conversion Page</a></span>
                 {{-- <span><img src="{{asset('assets/images/npclogo.png')}}" alt="" /></span> --}}
                 <span><img src="{{asset('assets/images/logo.png')}}" alt="" /></span>
             </div>

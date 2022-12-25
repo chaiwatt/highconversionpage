@@ -32,14 +32,15 @@ class HomeController extends Controller
         // $transaction = Transaction::where('source_id','src_test_5u7d1yb9claoeypo8vt')->first();
         // // $mediatransaction = MediaTransaction::where('source_id',trim($request->source))->first();
         // dd($transaction);
-        $package = [
-            'title' => 'ทดสอบการส่งเมล',
-            'slug' => 'post-slug'
-        ];
-        Notification::route('mail', [
-            'joerocknpc@gmail.com' => 'chaiwat',
-        ])->notify(new OrderPlacedNofication($package));
-        dd('its ok');
+        // $package = [
+        //     'title' => 'ทดสอบการส่งเมล',
+        //     'slug' => 'post-slug'
+        // ];
+        // Notification::route('mail', [
+        //     'joerocknpc@gmail.com' => 'chaiwat',
+        // ])->notify(new OrderPlacedNofication($package));
+        // dd('its ok');
+        return view('index');
     }
 
     public function salepage()
